@@ -13,7 +13,7 @@ Base.prepare(engine, reflect=True)
 Measure = Base.classes.measurement
 Stat = Base.classes.station
 session = Session(engine)
-route = Flask(_name_)
+app = Flask(__name__)
 #Home Page
 @app.route("/")
 def home():
